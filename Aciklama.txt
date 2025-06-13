@@ -1,0 +1,35 @@
+1. Asp.Net proje basalt 4.8 Empty olsun
+2. Master page olusturduk icinde w3schools tan html kodlari aldik.
+3. <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder> olusturduk bu bizde icine baska sayfalardan yazak oldugumuz yer.
+4. Web wofrm with master page olusturucaz
+5.   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Yaz okul ders kayit</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Ana Sayfa</a></li>
+      <li><a href="#">Ogrenciler</a></li>
+      <li><a href="#">Ogretmenler</a></li>
+      <li><a href="#">Dersler</a></li>
+      <li><a href="#">Kontenjanlar</a></li>
+      <li><a href="#">Kontenjanlar</a></li>
+      <li><a href="#">Yardim</a></li>
+    </ul>
+  </div>
+</nav>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+
+</body>
+</html>
+6.EntityLayer olusturucaz bu bizde veri tabana gidecek verileri tutmak icin
+7. Solution - > new project -> Class Library (.NET Framework) adiniada EntityLayer olusturucaz
+8. 
