@@ -51,6 +51,17 @@ namespace DataAccessLayer
             Baglanti.bgl.Close();
             return degerler;
         }
+        // silme islemini buradan basldik. icin bir metod olusturduk
+        public static bool OgrenciSil(int id) // 12. E Geldik 
+        {
+            SqlCommand komut3 = new SqlCommand("delete from TblOgrenci where Ogrid=@p1", Baglanti.bgl); // Ogrid parametresine gore silme islemi yapacagiz
+            if (komut3.Connection.State != ConnectionState.Open) // Baglanti kontrolu yapar, baglanti acik degilse acar
+            {
+                komut3.Connection.Open();
+            }
+            komut3.Parameters.AddWithValue("@p1", id); // Silinecek ogrencinin id'sini parametre olarak alir
+            return komut3.ExecuteNonQuery() > 0;    // ExecuteNonQuery -> insert, update, delete islemleri icin kullanilir, ve verileri dondurur
+        }
     }
 }
 // 7. DataAccessLayer icine DALOgrenci.cs dosyasini ekle

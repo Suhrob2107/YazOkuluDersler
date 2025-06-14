@@ -11,6 +11,7 @@
             <th>Ogrenci Fotograf</th>
             <th>Ogrenci Sifresi</th>
             <th>Ogrenci Bakiye</th>
+            <th>Islemler</th>
         </tr>
         <tbody>
             <asp:Repeater ID="Repeater1" runat="server">
@@ -23,7 +24,10 @@
                         <td><%# Eval("Fotograf") %></td>
                         <td><%# Eval("Sifre") %></td>
                         <td><%# Eval("Bakiye") %></td>
-
+                        <td>
+                            <asp:HyperLink NavigateUrl='<%# "~/OgrenciSil.aspx?OgrId=" + Eval("ID") %>' ID="HyperLink1" CssClass="btn btn-danger" runat="server">Sil</asp:HyperLink>
+                            <asp:HyperLink NavigateUrl='<%# "~/OgrenciGuncelle.aspx?OgrId=" + Eval("ID") %>' ID="HyperLink2" CssClass="btn btn-success" runat="server">Guncelle</asp:HyperLink>
+                        </td>
                     </tr>
                     </ItemTemplate>
             </asp:Repeater>
