@@ -34,6 +34,7 @@ namespace YazOkuluDersler
             ent.Sifre = TxtSifre.Text;
             ent.Fotograf = TxtFoto.Text; // Fotoğraf için bir URL veya dosya adı alındığını varsayıyoruz
             BLLOgrenci.OgrenciEkleBLL(ent); // BLLOgrenci sınıfındaki OgrenciEkleBLL metodunu çağırır
+            Response.Redirect("OgrenciListesi.aspx");
         }
     }
 }

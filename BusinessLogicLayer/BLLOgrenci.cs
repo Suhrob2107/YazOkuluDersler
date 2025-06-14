@@ -24,11 +24,23 @@ namespace BusinessLogicLayer
         }
         public static bool OgrenciSilBLL(int p) // 8. BLL icinde OgrenciSil metodunu olusturduk
         {
-            if (p != null) // Id'nin pozitif bir deger olmasi kontrolu yapar
+            if (p >= 0) // Id'nin pozitif bir deger olmasi kontrolu yapar
             {
                 return DALOgrenci.OgrenciSil(p); // DataAccessLayer'daki OgrenciSil metodunu cagirir
             }
             return false; // Hata durumunda -1 dondur yada null durumda hic bir sey dondurmez
+        }
+        public static List<EntityOgrenci> BllDetay(int p) // 7. BLL icinde OgrenciListele metodunu olusturduk
+        {
+            return DALOgrenci.OgrenciDetay(p); // DataAccessLayer'daki OgrenciLestesi metodunu cagirir ve listeyi dondurur
+        }
+        public static bool OgrenciGuncelleBLL(EntityOgrenci p)
+        {
+            if (p.Ad != null && p.Ad != "" && p.Soyad != null && p.Soyad != "" && p.Numara != null && p.Numara != "" && p.Sifre != null && p.Sifre != "" && p.Fotograf != null && p.Fotograf != "" && p.Id > 0)
+            {
+                return DALOgrenci.OgrenciGuncelle(p);
+            }
+            return false;
         }
     }
 }
