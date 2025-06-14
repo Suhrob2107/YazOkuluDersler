@@ -64,4 +64,4 @@ Bu proje, ASP.NET Web Forms ile geliştirilmiş, katmanlı mimari kullanan ve Bo
 
 1. Bu repoyu bilgisayarınıza klonlayın:
 ```bash
-git clone https://github.com/kullaniciadi/YazOkuluDersKayıt.git
+git clone git@github.com:Suhrob2107/YazOkuluDersler.git
