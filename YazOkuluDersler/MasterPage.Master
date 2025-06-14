@@ -21,7 +21,7 @@
       <li class="active"><a href="#">Ana Sayfa</a></li>
       <li><a href="OgrenciListesi.aspx">Ogrenciler</a></li>
       <li><a href="Default.aspx">Yeni Kayit</a></li>
-      <li><a href="#">Dersler</a></li>
+      <li><a href="Dersler.aspx">Dersler</a></li>
       <li><a href="#">Kontenjanlar</a></li>
       <li><a href="#">Kontenjanlar</a></li>
       <li><a href="#">Yardim</a></li>
