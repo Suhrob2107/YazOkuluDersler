@@ -38,18 +38,6 @@ Bu proje, ASP.NET Web Forms ile geliştirilmiş, katmanlı mimari kullanan ve Bo
 
 ---
 
-## 🖼️ Uygulama Görselleri
-
-> 📷 Örnek Ekranlar:
-
-![Ana Sayfa](images/anasayfa.png)  
-![Öğrenci Listesi](images/ogrenci_liste.png)  
-![Ders Kayıt](images/ders_kayit.png)
-
-> Görseller `images/` klasörüne eklenmelidir.
-
----
-
 ## 🧠 Öğrendiklerim
 
 - ASP.NET’te Web Forms mimarisiyle sayfa yapısı
